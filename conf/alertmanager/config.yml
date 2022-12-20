@@ -4,7 +4,7 @@ route:
     receiver: 'rocketchat'
 
 receivers:
-    - name: 'rocketchat'
+    - name: 'slack'
       webhook_configs:
           - send_resolved: false
             url: 'INCOMING_WEBHOOK'
@@ -18,9 +18,9 @@ receivers:
 #   receiver: 'slack'
 #
 #receivers:
-#   - name: 'slack'
-#     slack_configs:
-#        - send_resolved: true
-#          username: 'YOUR USERNAME'
-#          channel: '#YOURCHANNEL'
-#          api_url: 'INCOMMING WEBHOOK'
+   - name: 'slack'
+     slack_configs:
+        - send_resolved: true
+          username: 'guilherme.goulart'
+          channel: '#semantixdataplatform.slack.com'
+          api_url: 'INCOMMING WEBHOOK'
